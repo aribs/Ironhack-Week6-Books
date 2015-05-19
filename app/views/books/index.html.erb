@@ -1,0 +1,20 @@
+<h1>Search Form</h1>
+<%= form_tag("/", method: "get") do %>
+<p>
+	<%= text_field_tag :search, params[:search] %>
+	<%= submit_tag 'Search', :name => nil %>
+</p>
+<% end %>
+
+<h1>List of lastest books</h1>
+<ul>
+<% @books.each do |book| %>
+	<li>
+	<%= book.name %>
+	<%= book.price %>
+	<%= book.description %>
+	<%= book.rating %>
+	</li>
+<% end %>
+</ul>
+

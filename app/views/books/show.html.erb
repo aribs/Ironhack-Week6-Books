@@ -1,0 +1,12 @@
+<ul>
+<li><h3><%= @book.name %></h3></li>
+<li><%= @book.price %></li>
+<li><%= @book.description %></li>
+<li><%= @book.rating %></li>
+</ul>
+<h4>Rate this book.</h4>
+<%= form_for @book, url: {action: "update"} do |f| %>
+	<%= f.number_field(:rating, in: 1..5, step: 1) %>
+	<%= f.submit "Rating" %>
+<% end %>
+

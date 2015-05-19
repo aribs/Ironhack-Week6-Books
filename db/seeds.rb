@@ -1,0 +1,5 @@
+Book.create(name:'Lord of the rings',price: 23.44,description:'Frodo walks, walks, walks')
+Book.create(name:'Manual of Ruby clean code',price: 600.44,description:'The best book ever!')
+Book.create(name:'Abuela en bicicleta',price: 6.15,description:'Abuela sobrevuela por la ciudad con su bicicleta mágica, luchando contra el crimen')
+Book.create(name:'Abuela en bicicleta 2, la venganza',price: 11.44,description:'Vuelven las aventuras de la abuela, ahora convertida en una criminal exconvicta')
+Book.create(name:'La grulla de Irene',price: 55.44,description:'Irene tarda mas en hacer su grulla de papel que Frodo en llevar el anillo')
